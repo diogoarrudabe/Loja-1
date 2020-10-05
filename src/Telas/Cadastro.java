@@ -5,7 +5,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
 public class Cadastro extends javax.swing.JFrame {
-
+  String senhaUsuario, emailUsuario,nomeUsuario,dataUsuario;
    void Confirmar() {
 
         if ((txtNome.getText().isEmpty()) || (txtEmail.getText().isEmpty()) || (txtPass.getText().isEmpty())
@@ -18,22 +18,16 @@ public class Cadastro extends javax.swing.JFrame {
             this.dispose();
         }
     }
-  String senha, email,nome,data;
-   void Salvar(String email, String senha, int i){
-            this.nome = txtNome.getText();
-            this.email = txtEmail.getText();
-            this.data = txtData.getText();
-            this.senha = txtPass.getText();
-            System.out.println("Nome salvo:" + nome);
-            System.out.println("Email salvo:" + email);
-            System.out.println("Data salva:" + data);
-            System.out.println("Senha salva:" + senha);
+   void Salvar(){
+            this.nomeUsuario = txtNome.getText();
+            this.emailUsuario = txtEmail.getText();
+            this.dataUsuario = txtData.getText();
+            this.senhaUsuario = txtPass.getText();
+            System.out.println("Nome:" + nomeUsuario);
+            System.out.println("Email:" + emailUsuario);
+            System.out.println("Data:" + dataUsuario);
+            System.out.println("Senha:" + senhaUsuario);
     
-    }
-   public void Loginn (String email, String senha){ 
-            this.email = txtEmail.getText();
-            this.senha = txtPass.getText();
-            
     }
 
     public Cadastro() {
@@ -182,7 +176,7 @@ public class Cadastro extends javax.swing.JFrame {
     }//GEN-LAST:event_txtPassActionPerformed
 
     private void btnConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConfirmarActionPerformed
-        Salvar("","",0);
+        Salvar();
         Confirmar();
     }//GEN-LAST:event_btnConfirmarActionPerformed
 

@@ -4,28 +4,19 @@ package Telas;
 
 import javax.swing.JOptionPane;
 
-
-/**
- *
- * @author manut
- */
 public class Login extends javax.swing.JFrame { 
 
 
     
    void Logar(){
     Cadastro c1 = new Cadastro();
-        if (textLogin.getText().equals("admin") && (passSenha.getText().equals("123"))){
-
-            System.out.println(c1.nome);
-    
-               UIuser principal = new UIuser();
+        if (textLogin.getText().equals("Julio") && (passSenha.getText().equals("julio"))){
+                Tela_do_Usuario principal = new Tela_do_Usuario();
                 principal.setVisible(true);
                 this.dispose();
 	}
 else { 
-JOptionPane.showMessageDialog(null,"Login ou Senha incorretos","LOJA",JOptionPane.PLAIN_MESSAGE);
-				
+JOptionPane.showMessageDialog(null,"Login ou Senha incorretos","LOJA",JOptionPane.PLAIN_MESSAGE);				
 				}
     
     }
