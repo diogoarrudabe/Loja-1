@@ -48,6 +48,7 @@ JOptionPane.showMessageDialog(null,"Login ou Senha incorretos","LOJA",JOptionPan
         BtnEntrar = new javax.swing.JButton();
         textLogin = new javax.swing.JTextField();
         BtnCadastro = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
 
         jScrollPane1.setViewportView(jTextPane1);
 
@@ -77,7 +78,7 @@ JOptionPane.showMessageDialog(null,"Login ou Senha incorretos","LOJA",JOptionPan
                 BtnEntrarActionPerformed(evt);
             }
         });
-        jPanel1.add(BtnEntrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 360, 140, 40));
+        jPanel1.add(BtnEntrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 360, 140, 40));
 
         textLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -92,7 +93,10 @@ JOptionPane.showMessageDialog(null,"Login ou Senha incorretos","LOJA",JOptionPan
                 BtnCadastroActionPerformed(evt);
             }
         });
-        jPanel1.add(BtnCadastro, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 360, 140, 40));
+        jPanel1.add(BtnCadastro, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, 140, 40));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Telas/Fundo_1.jpg"))); // NOI18N
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 500));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -169,6 +173,7 @@ JOptionPane.showMessageDialog(null,"Login ou Senha incorretos","LOJA",JOptionPan
     private javax.swing.JButton BtnEntrar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextPane jTextPane1;
