@@ -10,8 +10,8 @@ public class Login extends javax.swing.JFrame {
     
    void Logar(){
     Cadastro c1 = new Cadastro();
-        if (textLogin.getText().equals("Julio") && (passSenha.getText().equals("julio"))){
-                Tela_do_Usuario principal = new Tela_do_Usuario();
+        if (textLogin.getText().equals("admin") && (passSenha.getText().equals("admin"))){
+                User principal = new User();
                 principal.setVisible(true);
                 this.dispose();
 	}
@@ -86,7 +86,7 @@ JOptionPane.showMessageDialog(null,"Login ou Senha incorretos","LOJA",JOptionPan
         });
         jPanel1.add(BtnCadastro, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, 140, 40));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Telas/Fundo_1.jpg"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Telas/Fundo.jpg"))); // NOI18N
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 500));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

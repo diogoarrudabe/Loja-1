@@ -6,7 +6,7 @@ import javax.swing.JTextField;
 
 public class Cadastro extends javax.swing.JFrame {
   String senhaUsuario, emailUsuario,nomeUsuario,dataUsuario;
-   void Confirmar() {
+   void Cadastro() {
 
         if ((txtNome.getText().isEmpty()) || (txtEmail.getText().isEmpty()) || (txtPass.getText().isEmpty())
                 || (txtData.getText().isEmpty())) {
@@ -18,11 +18,11 @@ public class Cadastro extends javax.swing.JFrame {
             this.dispose();
         }
     }
-   void Salvar(){
-            this.nomeUsuario = txtNome.getText();
-            this.emailUsuario = txtEmail.getText();
-            this.dataUsuario = txtData.getText();
-            this.senhaUsuario = txtPass.getText();
+   void Print(){
+            nomeUsuario = txtNome.getText();
+            emailUsuario = txtEmail.getText();
+            dataUsuario = txtData.getText();
+            senhaUsuario = txtPass.getText();
             System.out.println("Nome:" + nomeUsuario);
             System.out.println("Email:" + emailUsuario);
             System.out.println("Data:" + dataUsuario);
@@ -139,7 +139,7 @@ public class Cadastro extends javax.swing.JFrame {
         jLabel8.setText("Preencha");
         jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 120, 30));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Telas/Fundo_1.jpg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Telas/Fundo.jpg"))); // NOI18N
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 500));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -176,8 +176,8 @@ public class Cadastro extends javax.swing.JFrame {
     }//GEN-LAST:event_txtPassActionPerformed
 
     private void btnConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConfirmarActionPerformed
-        Salvar();
-        Confirmar();
+        Print();
+        Cadastro();
     }//GEN-LAST:event_btnConfirmarActionPerformed
 
     private void SexoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SexoActionPerformed
